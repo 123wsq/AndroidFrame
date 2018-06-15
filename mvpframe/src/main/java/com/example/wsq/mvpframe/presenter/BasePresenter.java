@@ -1,23 +1,23 @@
 package com.example.wsq.mvpframe.presenter;
 
+import com.example.wsq.library.okhttp.HttpRequestModel;
+import com.example.wsq.library.okhttp.callback.OnMvpCallBack;
+import com.example.wsq.library.okhttp.callback.OnRequestCallBack;
 import com.example.wsq.library.utils.LogUtils;
-import com.example.wsq.mvpframe.callback.OnMvpCallBack;
-import com.example.wsq.mvpframe.callback.OnRequestCallBack;
-import com.example.wsq.mvpframe.model.HttpRequestModel;
 import com.example.wsq.mvpframe.view.BaseView;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
 
-public class BasePresenter<T extends BaseView> {
+public class BasePresenter<V extends BaseView> {
 
-    protected WeakReference<T> weakReference;
+    protected WeakReference<V> weakReference;
     private HttpRequestModel httpRequest;
 
 
     //绑定
-    public void attachView(T view){
-        weakReference =new WeakReference<T>(view);
+    public void attachView(V view){
+        weakReference =new WeakReference<V>(view);
         httpRequest = new HttpRequestModel();
     }
     //解绑
@@ -26,7 +26,7 @@ public class BasePresenter<T extends BaseView> {
         weakReference.clear();
 
     }
-    protected T getView(){
+    protected V getView(){
         return weakReference.get();
     }
 

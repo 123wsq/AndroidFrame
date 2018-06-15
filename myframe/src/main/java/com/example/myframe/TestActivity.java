@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-@Route(path = "/test/testactivity")
+@Route(path = "/test/testactivity" )
 public class TestActivity extends Activity{
 
     @Override

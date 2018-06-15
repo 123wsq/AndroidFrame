@@ -4,8 +4,6 @@ import android.content.Context;
 
 public interface BaseView {
 
-    void onStart();
-
     /**
      * 显示加载动画
      */

@@ -1,4 +1,4 @@
-package com.example.wsq.mvpframe.callback;
+package com.example.wsq.library.okhttp.callback;
 
 public interface OnRequestCallBack<T> {
 

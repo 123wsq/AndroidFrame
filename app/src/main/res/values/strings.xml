@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidFrame</string>
+    <string name="start_break">开始跳转</string>
+    <string name="str_break_success">跳转成功</string>
 </resources>

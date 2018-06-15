@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
 
     <TextView
         android:id="@+id/start_break"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:lineSpacingExtra="18sp"
-        android:text="开始跳转"
-        android:textAllCaps="false"
+        android:text="@string/start_break"
         android:textSize="18sp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/start_samebreak"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="统一model跳转"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/start_parambreak"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="传参"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/start_resultbreak"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="返回值"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/start_openfragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="打开fragment"
+        android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        />
+</RelativeLayout>

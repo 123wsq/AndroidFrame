@@ -1,14 +1,17 @@
-package com.example.wsq.mvpframe.model;
+package com.example.wsq.library.okhttp;
+
+
 
 import com.example.wsq.library.okhttp.CallBackUtil;
 import com.example.wsq.library.okhttp.OkhttpUtil;
+import com.example.wsq.library.okhttp.callback.OnMvpCallBack;
 import com.example.wsq.library.utils.LogUtils;
 import com.example.wsq.library.utils.StringToMap;
-import com.example.wsq.mvpframe.callback.OnMvpCallBack;
 
 import java.util.Map;
 
 import okhttp3.Call;
+
 
 public class HttpRequestModel {
 
